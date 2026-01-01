@@ -1,7 +1,7 @@
 {
-  "name": "CypherX",
+  "name": "GODEFROIDX",
   "version": "1.8.6",
-  "description": "Deployment script for CypherX",
+  "description": "Deployment script for GODEFROIDX",
   "main": "index.js",
   "engines": {
       "node": ">= 18.x",
