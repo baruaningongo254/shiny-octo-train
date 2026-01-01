@@ -1,13 +1,13 @@
 {
-  "name": "CypherX",
-  "description": "CypherX, your friendly assistant!",
-  "logo": "https://i.ibb.co/nqsRcKDB/Xploader4.jpg",
+  "name": "GODEFROIDX",
+  "description": "GODEFROIDX, your friendly assistant!",
+  "logo": "https://i.ibb.co/nqsRcKDB/LuzIAImage-20250422-0001.jpg",
   "keywords": [],
-  "repository": "https://github.com/Dark-Xploit/CypherX",
+  "repository": "https://github.com/baruaningongo254/shiny-octo-train/GODEFROIDX",
   "stack": "container",
   "addons": [
     {
-      "plan": "heroku-postgresql"
+      "plan": "koyeb-postgresql"
     }
   ],
   "scripts": {
@@ -15,7 +15,7 @@
   },
 "env": {
   "SESSION_ID": {
-    "description": "Must begin with 'XPLOADER-BOT:~' or 'CYPHER-X:~'.",
+    "description": "Must begin with 'XPLOADER-BOT:~' or 'GODEFROID-X:~'.",
     "value": "",
     "required": false
   }
