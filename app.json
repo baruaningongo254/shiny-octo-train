@@ -1,0 +1,71 @@
+{
+  "name": "shiny-octo-train",
+  "type": "WEB",
+  "strategy": {
+    "type": "DEPLOYMENT_STRATEGY_TYPE_ROLLING"
+  },
+  "routes": [
+    {
+      "port": 8000,
+      "path": "/"
+    }
+  ],
+  "ports": [
+    {
+      "port": 8000,
+      "protocol": "http"
+    }
+  ],
+  "proxy_ports": [],
+  "env": [],
+  "regions": [
+    "was"
+  ],
+  "scalings": [
+    {
+      "scopes": [
+        "region:was"
+      ],
+      "min": 1,
+      "max": 1,
+      "targets": []
+    }
+  ],
+  "instance_types": [
+    {
+      "scopes": [
+        "region:was"
+      ],
+      "type": "nano"
+    }
+  ],
+  "health_checks": [
+    {
+      "grace_period": 5,
+      "interval": 30,
+      "restart_limit": 3,
+      "timeout": 5,
+      "tcp": {
+        "port": 8000
+      }
+    }
+  ],
+  "volumes": [],
+  "config_files": [],
+  "skip_cache": false,
+  "git": {
+    "repository": "github.com/baruaningongo254/shiny-octo-train",
+    "branch": "main",
+    "tag": "",
+    "sha": "535e88712223f1626096ad701a61c389b446ad90",
+    "build_command": "",
+    "run_command": "",
+    "no_deploy_on_push": false,
+    "workdir": "",
+    "buildpack": {
+      "build_command": "",
+      "run_command": "",
+      "privileged": false
+    }
+  }
+}
